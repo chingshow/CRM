@@ -6,7 +6,7 @@
     "color5": "",
     "siteTitle": "CRM",
     "hero": {
-        "title": "CRM-Help Center",
+        "title": "Help Center",
         "backgroundImage": ""
     },
     "introduction": {
@@ -55,8 +55,8 @@
         ]
     },
     "ad": {
-        "image": "./images/logo.png",
+        "image": "./images/CHERRY.jpg",
         "content": "",
-        "link": "https://ncudvn82.github.io/BosomeerBiotech/"
+        "link": "https://34.80.216.43"
     }
 }

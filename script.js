@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         currentFilterValue = tag;
     }
 
-    // 从 JSON 文件加载文章元数据
+    // 從 JSON 文件加載文章元數據
     fetch('content.json')
         .then(response => response.json())
         .then(data => {
-            articles = data.articles || [];
-            document.getElementById('title').textContent = data.title;
+            articles = data.documents.items || [];
+            document.getElementById('title').textContent = data.siteTitle;
             if (tag) {
                 filterArticles('tag', tag);
             } else {
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading articles:', error));
 });
-
 
 document.getElementById('homePage').addEventListener('click', function(e) {
     e.preventDefault();
@@ -48,7 +47,6 @@ function resetToHomePage() {
     updateFilterStatus();
     scrollToTop();
 }
-
 
 function displayArticles(page) {
     const articleContainer = document.getElementById('articles');
@@ -69,7 +67,7 @@ function displayArticles(page) {
             const article = displayedArticles[i];
             const articleElement = document.createElement('a');
             articleElement.className = 'article';
-            articleElement.href = `article.html?no=${article.no}`;
+            articleElement.href = `./documents/${article.no}.html`;
             articleElement.innerHTML = `
                 <h2>${article.titles}</h2>
                 <div class="article-meta">
@@ -91,6 +89,7 @@ function updatePagination() {
     // 更新當前頁碼顯示
     document.getElementById('currentPage').textContent = `第 ${currentPage} 頁,共 ${totalPages} 頁`;
 }
+
 document.getElementById('prevPage').addEventListener('click', () => {
     if (currentPage > 1) {
         currentPage--;
@@ -162,7 +161,6 @@ function clearFilter() {
     updatePagination();
     updateFilterStatus();
     resetToHomePage();
-
 }
 
 function updateFilterStatus() {

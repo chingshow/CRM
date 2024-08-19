@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             articles = data.documents.items || [];
-            document.getElementById('title').textContent = data.siteTitle;
+            document.getElementById('title').textContent = data.hero.title;
+            document.getElementById('headtitle').textContent = data.siteTitle;
             if (tag) {
                 filterArticles('tag', tag);
             } else {

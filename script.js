@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
             articles = data.documents.items || [];
             document.getElementById('title').textContent = data.hero.title;
             document.getElementById('headtitle').textContent = data.siteTitle;
+            document.documentElement.style.setProperty('--primary-color', data.color1);
+            document.documentElement.style.setProperty('--secondary-color', data.color2);
+            document.documentElement.style.setProperty('--text-color', data.color3);
+            document.documentElement.style.setProperty('--background-color', data.color4);
+            document.documentElement.style.setProperty('--accent-color', data.color5);
             if (tag) {
                 filterArticles('tag', tag);
             } else {

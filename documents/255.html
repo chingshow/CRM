@@ -13,127 +13,79 @@
       <h2 id="auther">Cherry</h2>
     </div>
     <div class="container" id="content">
-      <h2><h2>Outlook寄信教學</h2></h2>
+        <h2><h2>Outlook寄信教學</h2></h2>
 
-      <ul><ul>
-<li><strong>登入頁面</strong></li>
-</ul></ul>
+        <ul><ul>
+            <li><strong>登入頁面</strong></li>
+                <p><p><img alt="image" src="https://hackmd.io/_uploads/S1ZEJdxsA.png"/></p></p>
+                <ul>
+                    <li>
+                        <pre><pre>請在此處輸入您的Outlook帳號及密碼並按下<code>Login</code>按鍵，若帳密正確將跳至寄信頁面，若輸入錯誤，上方將跳出錯誤訊息。</pre></pre>
+                    <p><p><img src="https://hackmd.io/_uploads/ryrjyuxsC.png" width="70%"/></p></p>
+                    </li>
+                </ul>
+            <li><strong>寄信頁面</strong></li>
+            <p><p><img alt="image" src="https://hackmd.io/_uploads/HJtDg_xsA.png"/></p></p>
+            <ul><ul>
+                <li><strong>目前登入帳號及登出按鍵</strong></li>
+                <p><p><img src="https://hackmd.io/_uploads/B1y9eugsC.png" width="50%"/></p></p>
+                <p><p>您可於右上角查看目前登入的帳號，若欲登出請按<code>Logout</code>按鍵，將為您跳轉至剛剛的登入頁面。</p></p>
+            </ul></ul>
+            <li><strong>From (optional):</strong> </li>
+            <p><p><img src="https://hackmd.io/_uploads/Bk_9W_giA.png" width="70%"/></p></p>
+            <p><p><strong>選填</strong>，可填選您希望的寄件信箱(但必須是<code>已授權</code>的共用信箱)。若無填寫將默認為您登入的帳號。</p></p>
+            <blockquote><strong>注意:</strong> 若填寫的共用信箱<code>無經過授權</code>，則按下<code>Send</code>按鍵後會跳出寄信失敗的錯誤。</blockquote>
 
-      <p><p><img alt="image" src="https://hackmd.io/_uploads/S1ZEJdxsA.png"/></p></p>
+            <li><strong>Reply-To (optional):</strong> </li>
+            <p><p><img src="https://hackmd.io/_uploads/Sy4-muei0.png" width="70%"/></p></p>
+            <p><p><strong>選填</strong>，可填選您希望收到收件者回覆的信箱(當收件者收到信件後回覆的對象)。若無填寫將默認為寄件者(From)這個信箱。</p></p>
 
-      <pre><pre><code>- 請在此處輸入您的Outlook帳號及密碼並按下```Login```按鍵，若帳密正確將跳至寄信頁面，若輸入錯誤，上方將跳出錯誤訊息。
-</code></pre></pre>
+            <li><strong>Select recipient type:</strong> </li>
+            <p><p><strong>必填</strong>，有兩種選項</p></p>
+            <ul>
+                <li><pre><pre>選擇<code>Group</code>
+                </pre></pre></li>
+                <p><p><img src="https://hackmd.io/_uploads/S1jfEdgoC.png" width="70%"/></p></p>
+                <p><p>點選<code>Group</code>則為群組寄件，<code>Select recipient group</code>會顯示客戶資料表中所有Type的列表。選擇您要寄送的Type後即代表會對客戶資料表中Type設為此值的所有客戶寄信。</p></p>
+                <p><p><img src="https://hackmd.io/_uploads/rJX0Kuls0.png" width="70%"/></p></p>
 
-      <p><p><img src="https://hackmd.io/_uploads/ryrjyuxsC.png" width="70%"/></p></p>
+                <li><pre><pre>選擇<code>Individual</code></pre></pre></li>
+                <p><p><img src="https://hackmd.io/_uploads/BJLEVdloA.png" width="70%"/></p></p>
+                <p><p>點選<code>Individual</code>則為個別寄件，<code>Select individual</code>會顯示客戶資料表中所有客戶的名字及郵件。</p></p>
+                <p><p>您可在下方輸入欄搜尋名字或是郵件。選擇完畢後將針對此單一信箱寄信。</p></p>
+                <p><p><img src="https://hackmd.io/_uploads/H1jCcuejC.png" width="70%"/></p></p>
+            </ul>
 
-      <ul><ul>
-<li><strong>寄信頁面</strong></li>
-</ul></ul>
+            <li><strong>Email subject:</strong> </li>
+            <p><p><strong>必填</strong>，輸入信件的主旨。</p></p>
+            <p><p><img src="https://hackmd.io/_uploads/BkCaoOeoR.png" width="70%"/></p></p>
 
-      <p><p><img alt="image" src="https://hackmd.io/_uploads/HJtDg_xsA.png"/></p></p>
+            <li><strong>Email body:</strong> </li>
+            <p><p><strong>必填</strong>，輸入信件的內文。</p></p>
+            <p><p><img src="https://hackmd.io/_uploads/r1hXnugiC.png" width="70%"/></p></p>
+            <ul>
+                <li>
+                    <code>{name}</code>標籤: 對應信件title。以下為Ragic欄位的對應規則: </li>
+                    1. Email Title
+                <br>
+                    2. (若Email Title為空) Last Name + Title 1
+                <br>
+                    3. (若Last Name或Title 1其中之一或兩者皆為空) Name
+                <br>
+            <blockquote><strong>舉例:</strong> 若在信件內文填寫"{name}您好"，則寄信出去後將替換成客戶資料表上對應欄位(根據上述規則)，如"陳董事您好"。</blockquote>
+                <li><code>Insert hyperlink</code>按鍵:</li>
+                <img src= "https://hackmd.io/_uploads/HysqWKlsR.png" width="70%">
+                <p>可插入超連結在郵件內文。</p>
+                <blockquote><strong>舉例:</strong> 點選<code>Insert hyperlink</code>按鍵後會出現<code>&lt;a href="網址"&gt;顯示名稱&lt;/a&gt;</code>，假如您想超連結到Youtube首頁，可修改成 <code> &lt;a href="https://www.youtube.com/"&gt;Youtube &lt;/a&gt;</code>，則寄出後會顯示成<a href="https://www.youtube.com/">Youtube</a>。</blockquote>
+            </ul>
 
-      <ul><ul>
-<li><strong>目前登入帳號及登出按鍵</strong></li>
-</ul></ul>
+            <li><strong>Attach a file: (Less than 10M):</strong></li>
+            <p><p><img src="https://hackmd.io/_uploads/HkUu-tgjC.png" width="70%"/></p></p>
+            <p><p>可在此處添加附件檔案。</p></p>
+            <blockquote>注意: 檔案容量大小限制為<code>10MB</code>，有部分檔案無法傳送，詳請可查看 <a href="https://support.microsoft.com/zh-tw/office/outlook-%E4%B8%AD%E5%B0%81%E9%8E%96%E7%9A%84%E9%99%84%E4%BB%B6-434752e1-02d3-4e90-9124-8b81e49a8519">Outlook中封鎖的附件</a>。</blockquote>
+            <p><p>確認以上資訊都填妥完畢後，可按下<code>Send</code>按鍵，您的寄信紀錄將同步更新在Ragic的<code>CRM頁籤</code>中的<code>客戶聯繫紀錄</code>。</p></p>
 
-      <p><p><img src="https://hackmd.io/_uploads/B1y9eugsC.png" width="50%"/></p></p>
-
-      <p><p>您可於右上角查看目前登入的帳號，若欲登出請按<code>Logout</code>按鍵，將為您跳轉至剛剛的登入頁面。</p></p>
-
-      <ul><ul>
-<li><strong>From (optional):</strong> </li>
-</ul></ul>
-
-      <p><p><img src="https://hackmd.io/_uploads/Bk_9W_giA.png" width="70%"/></p></p>
-
-      <p><p><strong>選填</strong>，可填選您希望的寄件信箱(但必須是<code>已授權</code>的共用信箱)。若無填寫將默認為您登入的帳號。</p></p>
-
-      <pre><pre><code>&gt; **注意:** 若填寫的共用信箱```無經過授權```，則按下```Send```按鍵後會跳出寄信失敗的錯誤。
-</code></pre></pre>
-
-      <ul><ul>
-<li><strong>Reply-To (optional):</strong> </li>
-</ul></ul>
-
-      <p><p><img src="https://hackmd.io/_uploads/Sy4-muei0.png" width="70%"/></p></p>
-
-      <p><p><strong>選填</strong>，可填選您希望收到收件者回覆的信箱(當收件者收到信件後回覆的對象)。若無填寫將默認為寄件者(From)這個信箱。</p></p>
-
-      <ul><ul>
-<li><strong>Select recipient type:</strong> </li>
-</ul></ul>
-
-      <p><p><strong>必填</strong>，有兩種選項</p></p>
-
-      <pre><pre><code>- 選擇```Group```
-</code></pre></pre>
-
-      <p><p><img src="https://hackmd.io/_uploads/S1jfEdgoC.png" width="70%"/></p></p>
-
-      <p><p>點選<code>Group</code>則為群組寄件，<code>Select recipient group</code>會顯示客戶資料表中所有Type的列表。選擇您要寄送的Type後即代表會對客戶資料表中Type設為此值的所有客戶寄信。</p></p>
-
-      <p><p><img src="https://hackmd.io/_uploads/rJX0Kuls0.png" width="70%"/></p></p>
-
-      <pre><pre><code>- 選擇```Individual```
-</code></pre></pre>
-
-      <p><p><img src="https://hackmd.io/_uploads/BJLEVdloA.png" width="70%"/></p></p>
-
-      <p><p>點選<code>Individual</code>則為個別寄件，<code>Select individual</code>會顯示客戶資料表中所有客戶的名字及郵件。</p></p>
-
-      <p><p>您可在下方輸入欄搜尋名字或是郵件。選擇完畢後將針對此單一信箱寄信。</p></p>
-
-      <p><p><img src="https://hackmd.io/_uploads/H1jCcuejC.png" width="70%"/></p></p>
-
-      <ul><ul>
-<li><strong>Email subject:</strong> </li>
-</ul></ul>
-
-      <p><p><strong>必填</strong>，輸入信件的主旨。</p></p>
-
-      <p><p><img src="https://hackmd.io/_uploads/BkCaoOeoR.png" width="70%"/></p></p>
-
-      <ul><ul>
-<li><strong>Email body:</strong> </li>
-</ul></ul>
-
-      <p><p><strong>必填</strong>，輸入信件的內文。</p></p>
-
-      <p><p><img src="https://hackmd.io/_uploads/r1hXnugiC.png" width="70%"/></p></p>
-
-      <pre><pre><code>- ```{name}```標籤: 對應信件title。以下為Ragic欄位的對應規則:
-
-    1. Email Title
-
-    2. (若Email Title為空) Last Name + Title 1
-
-    3. (若Last Name或Title 1其中之一或兩者皆為空) Name
-
-    &gt; **舉例:** 若在信件內文填寫"{name}您好"，則寄信出去後將替換成客戶資料表上對應欄位(根據上述規則)，如"陳董事您好"。
-
-
-
-- ```Insert hyperlink```按鍵:
-
-&lt;img src= "https://hackmd.io/_uploads/HysqWKlsR.png" width="70%"&gt;
-
-可插入超連結在郵件內文。
-
-    &gt; **舉例:** 點選```Insert hyperlink```按鍵後會出現```&lt;a href="網址"&gt;顯示名稱&lt;/a&gt;```，假如您想超連結到Youtube首頁，可修改成 ```&lt;a href="https://www.youtube.com/"&gt;Youtube&lt;/a&gt;```，則寄出後會顯示成[Youtube](https://www.youtube.com/)。
-</code></pre></pre>
-
-      <ul><ul>
-<li><strong>Attach a file: (Less than 10M):</strong></li>
-</ul></ul>
-
-      <p><p><img src="https://hackmd.io/_uploads/HkUu-tgjC.png" width="70%"/></p></p>
-
-      <p><p>可在此處添加附件檔案。</p></p>
-
-      <pre><pre><code>&gt;  注意: 檔案容量大小限制為```10MB```，有部分檔案無法傳送，詳請可查看[Outlook中封鎖的附件](https://support.microsoft.com/zh-tw/office/outlook-%E4%B8%AD%E5%B0%81%E9%8E%96%E7%9A%84%E9%99%84%E4%BB%B6-434752e1-02d3-4e90-9124-8b81e49a8519)。
-</code></pre></pre>
-
-      <p><p>確認以上資訊都填妥完畢後，可按下<code>Send</code>按鍵，您的寄信紀錄將同步更新在Ragic的<code>CRM頁籤</code>中的<code>客戶聯繫紀錄</code>。</p></p>
+        </ul></ul>
     </div>
   </body>
 </html>

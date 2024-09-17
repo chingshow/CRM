@@ -74,9 +74,17 @@
             }
         ]
     },
-    "ad": {
+    "ad1": {
         "image": "./images/CHERRY.jpg",
         "content": "",
         "link": "https://34.80.216.43"
+    },
+    "ad2": {
+        "image": "",
+        "link": ""
+    },
+    "ad3": {
+        "image": "",
+        "link": ""
     }
 }

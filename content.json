@@ -15,64 +15,7 @@
     },
     "documents": {
         "title": "Documents",
-        "items": [
-            {
-                "titles": "Overview",
-                "author": "Cherry",
-                "no": 257,
-                "date": "2024/08/20",
-                "tags": [
-                    "文章"
-                ]
-            },
-            {
-                "titles": "LinkedIn Profile搜尋教學",
-                "author": "Cherry",
-                "no": 256,
-                "date": "2024/08/19",
-                "tags": [
-                    "文章"
-                ]
-            },
-            {
-                "titles": "Outlook寄信教學",
-                "author": "Cherry",
-                "no": 255,
-                "date": "2024/08/19",
-                "tags": [
-                    "文章"
-                ]
-            },
-            {
-                "titles": "Excel上傳教學",
-                "author": "Cherry",
-                "no": 254,
-                "date": "2024/08/19",
-                "tags": [
-                    "文章"
-                ]
-            },
-            {
-                "titles": "名片上傳教學",
-                "author": "Cherry",
-                "no": 253,
-                "date": "2024/08/19",
-                "tags": [
-                    "文章"
-                ]
-            },
-            {
-                "titles": "CARBOPLATIN INJECTION DBL介紹",
-                "author": "Cancerfree",
-                "no": 250,
-                "date": "2024/08/07",
-                "tags": [
-                    "文章",
-                    "產品",
-                    "INJECTION"
-                ]
-            }
-        ]
+        "items": []
     },
     "ad1": {
         "image": "./images/CHERRY.jpg",
